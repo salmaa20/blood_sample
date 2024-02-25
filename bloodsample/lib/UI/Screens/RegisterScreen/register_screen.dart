@@ -1,0 +1,62 @@
+import 'package:bloodsample/Widget/mini_elevated_button.dart';
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
+class RegisterScreen extends StatelessWidget {
+  const RegisterScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.white,
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          Container(
+            width: Get.width,
+            height: 300,
+            decoration: const BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/images/registerscreen photo.png'),
+                  fit: BoxFit.cover,
+                )),
+          ),
+          RichText(
+            text: const TextSpan(
+              text: 'Regular',
+              style: TextStyle(color: Colors.black,fontSize: 30,fontStyle: FontStyle.italic), /*defining default style is optional */
+              children: <TextSpan>[
+                TextSpan(
+                    text: ' Health Check', style: TextStyle(color: Color(0XFF4DC4EF),)),
+                TextSpan(
+                    text: ' can identify any'),
+                TextSpan(
+                    text: ' Early Signs ',
+                    style: TextStyle(color: Color(0XFF4DC4EF), )),
+                TextSpan(
+                    text: ' of health issues...'),
+              ],
+            ),
+          ),
+          MiniElevatedButton(text: 'Register',  onPressed: (){}),
+          Text('____sign up with____',style: TextStyle(color: Color(0XFFBCBCBC)),),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+            IconButton(
+              icon: Image.asset('assets/images/fb-logo 1.jpg'),
+              iconSize: 10,
+              onPressed: () {},
+            ),
+            IconButton(
+              icon: Image.asset('assets/images/Google__G__logo 1.png'),
+              iconSize: 50,
+              onPressed: () {},
+            ),
+
+          ],)
+        ],
+      ),
+    );
+  }
+}
