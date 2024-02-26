@@ -25,7 +25,7 @@ class RegisterAsScreen extends StatelessWidget {
           body: Padding(
             padding: const EdgeInsets.all(20),
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,
@@ -40,53 +40,18 @@ class RegisterAsScreen extends StatelessWidget {
                         )),
                   ),
                 ],),
+               SizedBox(height: 90,),
                const Align(
                  alignment: Alignment.topLeft,
                  child: Text('Register as:',
                    style: TextStyle(color: Colors.black,fontSize: 30,fontWeight: FontWeight.bold),),
                ),
+                SizedBox(height: 70,),
                 CustomRegisterContainerWidget(text: 'Blood  Bank', imagePath: 'assets/images/blood-bank (1) 1.png', onPressed: (){},),
+                SizedBox(height: 90,),
                 CustomRegisterContainerWidget(text: 'User', imagePath: 'assets/images/people 1.png', onPressed: (){Get.to(const RegisterScreen());},)
-                
 
-
-                
-                /*InkWell(
-                  onTap: (){},
-                  child: Column(
-                    children: [
-                      Container(
-                        width: Get.width,
-                        height: 100,
-                        decoration: const BoxDecoration(
-                            image: DecorationImage(
-                              image: AssetImage('assets/images/blood-bank (1) 1.png'),
-                              fit: BoxFit.contain,
-                            )),
-                      ),
-                      Text('Blood Bank',style: TextStyle(color: Colors.black,fontSize: 20,fontWeight: FontWeight.w400),),
-                    ],
-                  ),
-                ),
-
-                InkWell(
-                  onTap: (){},
-                  child: Column(
-                    children: [
-                      Container(
-                        width: Get.width,
-                        height: 100,
-                        decoration: const BoxDecoration(
-                            image: DecorationImage(
-                              image: AssetImage('assets/images/people 1.png'),
-                              fit: BoxFit.contain,
-                            )),
-                      ),
-                      Text('User',style: TextStyle(color: Colors.black,fontSize: 20,fontWeight: FontWeight.w400),),
-                    ],
-                  ),
-                ),
-              */],
+              ],
             ),
           ),
         ));
