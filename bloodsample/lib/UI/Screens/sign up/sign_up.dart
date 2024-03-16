@@ -14,7 +14,7 @@ class Signup extends StatelessWidget {
       body: Container(
         width: Get.width,
         height: Get.height,
-        color:Color(0xffDEE4E7) ,
+        color:Color(0xffffffff) ,
         child: Center(
           child: Column(
             children: <Widget>[

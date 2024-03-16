@@ -13,10 +13,10 @@ class Header extends StatelessWidget {
           Container(
               height: 300,
               width: 300,
-              child: Image(image: AssetImage('assets/images/logos.jpg'))),
+              child: Image(image: AssetImage('assets/images/logooo.jpeg'))),
           SizedBox(height: 5,),
           Center(
-            child: Text("Sign Up",
+            child: Text("Sign up",
               style: TextStyle(color: Colors.black, fontSize: 35,
                 fontWeight: FontWeight.bold,
               ),),

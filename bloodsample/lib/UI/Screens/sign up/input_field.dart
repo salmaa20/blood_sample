@@ -82,7 +82,36 @@ class InputField extends StatelessWidget{
                         obscureText: false,
                         SuffixColor: Colors.transparent,
                         FillColor: Colors.white38,),
+                      Text(
+                        'location                                                                       ',
+                        style:
+                        TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                      ),
 
+                      CustomTextFormFieldWidget
+                        (Controller: controller.emailaddressController,
+                        validator: controller.emailValidator,
+                        keyboardType: TextInputType.emailAddress,
+                        textfieldHint: "Enter Your location",
+                        ispasswordField: false,
+                        obscureText: false,
+                        SuffixColor: Colors.transparent,
+                        FillColor: Colors.white38,),
+                      Text(
+                        'Blood type                                                                     ',
+                        style:
+                        TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                      ),
+
+                      CustomTextFormFieldWidget
+                        (Controller: controller.emailaddressController,
+                        validator: controller.emailValidator,
+                        keyboardType: TextInputType.emailAddress,
+                        textfieldHint: "Enter Your blood type",
+                        ispasswordField: false,
+                        obscureText: false,
+                        SuffixColor: Colors.transparent,
+                        FillColor: Colors.white38,),
                       Text(
                         'password                                                                 ',
                         style:

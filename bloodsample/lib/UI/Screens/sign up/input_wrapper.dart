@@ -32,8 +32,8 @@ class InputWrapper extends StatelessWidget {
                     height: 5,
                   ),
                   CustomElevatedButtonWidget(
-                    text: "Sign Up",
-                    textColor: Colors.black,
+                    text: "complete Register",
+                    textColor: Colors.white,
                     onPressed: () {
 
                       if (controller.formkey.currentState!.validate()) {
