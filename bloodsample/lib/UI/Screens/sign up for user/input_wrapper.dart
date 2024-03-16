@@ -43,16 +43,18 @@ class InputWrapper extends StatelessWidget {
 
                     },
                   ),
-                  Center(
-                    child: TextButton(
-                      onPressed:() { Get.to(LoginScreen());},
-                      child: Text(
-                        'Already have an account? sign in',
-                        style: TextStyle(fontSize: 15, color: Colors.black),
-                      ),
-                    ),
-                  ),
-                ],
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      const Text('Already have an Account ?',
+                          style: TextStyle(color: Color(0XFF867B7B),fontSize: 15,)),
+                      InkWell(
+                          onTap: (){
+                            Get.to(LoginScreen());
+                          },
+                          child: const Text('sign in ', style: TextStyle(color: Color(0XFF4DC4EF),fontSize: 15 ),))
+                    ],
+                  )],
               ),
             ),
           );

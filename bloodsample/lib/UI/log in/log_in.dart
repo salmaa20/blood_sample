@@ -126,7 +126,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                       (onPressed: () {
                                       Get.to(Signup());
                                     },
-                                        child: Text(" Sign up for free!", style: TextStyle(color: Color(0xff666666)),))
+                                        child: Text(" Sign up for free!", style: TextStyle(color: Color(0XFF4DC4EF)),))
                                   ],
                                 )
                               ],

@@ -14,25 +14,32 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
-    body: Container(
-    width: Get.width,
-    height: Get.height,
-    color:Color(0xffffffff) ,
-    child: SingleChildScrollView(
-    child: Center(
-    child: Column(
-    children: [
-    Row(
-    children: [
-    IconButton(onPressed: (){
-    Get.to(WelcomeScreen());
-    },
-    icon: Icon(Icons.arrow_back_outlined) ,color: Color(0xff0A0A0A),),
-    ],
-    ),
-    Image(image: AssetImage('assets/images/logooo.jpeg'),),
-    ]
+    return Scaffold(
+      body: Container(
+        width: Get.width,
+        height: Get.height,
+        color: Color(0xffffffff),
+        child: SingleChildScrollView(
+          child: Center(
+            child: Column(children: [
+              Row(
+                children: [
+                  IconButton(
+                    onPressed: () {
+                      Get.to(WelcomeScreen());
+                    },
+                    icon: Icon(Icons.arrow_back_outlined),
+                    color: Color(0xff0A0A0A),
+                  ),
+                ],
+              ),
+              Image(
+                image: AssetImage('assets/images/logooo.jpeg'),
+              ),
+            ]),
+          ),
+        ),
+      ),
     );
   }
 }
