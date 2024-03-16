@@ -1,6 +1,5 @@
 
 import 'package:flutter/material.dart';
-
 // ignore: use_key_in_widget_constructors
 class Header extends StatelessWidget {
   @override
@@ -14,7 +13,7 @@ class Header extends StatelessWidget {
           Container(
               height: 300,
               width: 300,
-              child: Image(image: AssetImage('assets\images\logo.jpg'))),
+              child: Image(image: AssetImage('assets/images/logos.jpg'))),
           SizedBox(height: 5,),
           Center(
             child: Text("Sign Up",

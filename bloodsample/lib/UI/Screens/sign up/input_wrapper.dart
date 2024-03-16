@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import '../../../Widget/custom_elevated_button_widget.dart';
+import '../../log in/log_in.dart';
 import 'input_field.dart';
 
 // ignore: use_key_in_widget_constructors
@@ -44,7 +45,7 @@ class InputWrapper extends StatelessWidget {
                   ),
                   Center(
                     child: TextButton(
-                      onPressed: () {},
+                      onPressed:() { Get.to(LoginScreen());},
                       child: Text(
                         'Already have an account? sign in',
                         style: TextStyle(fontSize: 15, color: Colors.black),

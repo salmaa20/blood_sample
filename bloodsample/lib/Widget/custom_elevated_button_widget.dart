@@ -17,7 +17,8 @@ class CustomElevatedButtonWidget extends StatelessWidget{
       child: ElevatedButton(onPressed: (){
         onPressed!();
         // ignore: sort_child_properties_last
-      }, child:Text(text , style: TextStyle(color: textColor , fontSize: 20 , fontWeight: FontWeight.bold),),
+      },
+        child:Text(text , style: TextStyle(color: textColor , fontSize: 20 , fontWeight: FontWeight.bold),),
         style: ElevatedButton.styleFrom(
           shape: const RoundedRectangleBorder(
               borderRadius: BorderRadius.only(

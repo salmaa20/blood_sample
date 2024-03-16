@@ -5,14 +5,13 @@ import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 import 'package:get/get_state_manager/src/simple/get_controllers.dart';
 
-import '../../services/user_authentication.dart';
-
 
 class LogInController extends GetxController {
   final formkey = GlobalKey<FormState>();
-  final FirebaseAuthService _auth = FirebaseAuthService();
   final emailaddressController = TextEditingController();
   final passwordController = TextEditingController();
+
+  get user => null;
 
 
   String? emailValidator(String? email) {
@@ -61,8 +60,6 @@ class LogInController extends GetxController {
   void signIn() async {
     String email = emailaddressController.text;
     String password = passwordController.text;
-    User? user = await _auth.signInWithEmailAndPassword(email, password);
-
 
     if (user != null) {
       // ignore: prefer_const_constructors

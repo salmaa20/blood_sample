@@ -6,16 +6,16 @@ import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/src/extension_navigation.dart';
 import 'package:get/get_state_manager/src/simple/get_controllers.dart';
 
-import '../../../services/user_authentication.dart';
 
 class SignUpController extends GetxController {
   final  formkey =  GlobalKey<FormState>();
-  final FirebaseAuthService _auth = FirebaseAuthService();
   final usernameController =  TextEditingController();
   final phoneController =  TextEditingController();
   final emailaddressController =  TextEditingController();
   final passwordController =  TextEditingController();
   final confirmpasswordController =  TextEditingController();
+
+  get user => null;
 
 
   String? usernameValidator (String? username){
@@ -104,8 +104,6 @@ class SignUpController extends GetxController {
     String phone = phoneController.text;
     // ignore: unused_local_variable
     String name = usernameController.text;
-
-    User? user  = await _auth.signUpWithEmailAndPassword(email,password);
 
     if (user!= null){
       print(" User is Successfully created ");

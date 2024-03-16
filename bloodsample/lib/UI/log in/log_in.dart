@@ -39,7 +39,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             icon: Icon(Icons.arrow_back_outlined) ,color: Color(0xff0A0A0A),),
                         ],
                       ),
-                      Image(image: AssetImage('assets/images/logo.jpg'),),
+                      Image(image: AssetImage('assets/images/logos.jpg'),),
                       SizedBox(height: 10,),
                       Text("Login       " , style: TextStyle(fontSize: 30),),
                       SizedBox(height: 120,),
@@ -95,7 +95,8 @@ class _LoginScreenState extends State<LoginScreen> {
                                     style: TextStyle(color: Color(0xff666666)),)),
                                 ],),
 
-                                CustomElevatedButtonWidget(text: "Sign In", textColor: Colors.white, onPressed: (){
+                                CustomElevatedButtonWidget
+                                  (text: "Sign In", textColor: Colors.white, onPressed: (){
                                   if (controller.formkey.currentState!.validate()) {
                                     controller.signIn();
                                   }

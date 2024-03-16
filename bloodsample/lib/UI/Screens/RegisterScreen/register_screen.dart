@@ -2,6 +2,8 @@ import 'package:bloodsample/Widget/mini_elevated_button.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../sign up/sign_up.dart';
+
 class RegisterScreen extends StatelessWidget {
   const RegisterScreen({super.key});
 
@@ -41,7 +43,7 @@ class RegisterScreen extends StatelessWidget {
               ),
             ),
           ),
-          MiniElevatedButton(text: 'Register',  onPressed: (){}),
+          MiniElevatedButton(text: 'Register',   onPressed:() { Get.to(Signup());}),
           const Text('____sign up with____',style: TextStyle(color: Color(0XFFBCBCBC)),),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
