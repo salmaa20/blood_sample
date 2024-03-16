@@ -7,7 +7,8 @@ import 'package:get/get_state_manager/src/simple/get_state.dart';
 import '../../Widget/custom_elevated_button_widget.dart';
 import '../../Widget/custom_text_form_field_widget.dart';
 import '../Screens/WelcomeScreen/welcome_screen.dart';
-import '../Screens/sign up/sign_up.dart';
+
+import '../Screens/sign up for user/sign_up.dart';
 import 'login_controller.dart';
 
 // ignore: use_key_in_widget_constructors
@@ -26,7 +27,7 @@ class _LoginScreenState extends State<LoginScreen> {
             body: Container(
               width: Get.width,
               height: Get.height,
-              color:Color(0xffDEE4E7) ,
+              color:Color(0xffffffff) ,
               child: SingleChildScrollView(
                 child: Center(
                   child: Column(
@@ -39,15 +40,14 @@ class _LoginScreenState extends State<LoginScreen> {
                             icon: Icon(Icons.arrow_back_outlined) ,color: Color(0xff0A0A0A),),
                         ],
                       ),
-                      Image(image: AssetImage('assets/images/logos.jpg'),),
-                      SizedBox(height: 10,),
-                      Text("Login       " , style: TextStyle(fontSize: 30),),
-                      SizedBox(height: 120,),
+                      Image(image: AssetImage('assets/images/logooo.jpeg'),),
+                      SizedBox(height: 0,),
+                      Text("       Login       " , style: TextStyle(fontSize: 40),),
+                      SizedBox(height: 5,),
                       Container(
                           height: 600,
                           decoration: BoxDecoration(
-                            color: Colors.white38,
-
+                            color: Colors.white,
                             borderRadius: BorderRadius.only(
                               topLeft: Radius.circular(50),
                               topRight: Radius.circular(50),
@@ -57,7 +57,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             key: controller.formkey,
                             child: Column(
                               children: [
-                                SizedBox(height: 40,),
+                                SizedBox(height: 30,),
                                 Row(
                                   // ignore: prefer_const_literals_to_create_immutables
                                   children: [
@@ -101,8 +101,23 @@ class _LoginScreenState extends State<LoginScreen> {
                                     controller.signIn();
                                   }
                                 }),
-                                SizedBox(height: 40,),
+                                const Text('______or______',style: TextStyle(color: Color(0XFFBCBCBC)),),
 
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    IconButton(
+                                      icon: Image.asset('assets/images/fb-logo 1.jpg'),
+                                      iconSize: 10,
+                                      onPressed: () {},
+                                    ),
+                                    IconButton(
+                                      icon: Image.asset('assets/images/Google__G__logo 1.png'),
+                                      iconSize: 50,
+                                      onPressed: () {},
+                                    ),
+                                  ],),
+                                SizedBox(height: 30,),
                                 Row(
                                   children: [
                                     SizedBox(width: 60,),

@@ -1,5 +1,5 @@
 
-import 'package:bloodsample/UI/Screens/sign%20up/signup_controller.dart';
+import 'package:bloodsample/UI/Screens/sign%20up%20for%20user/signup_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';

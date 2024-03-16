@@ -1,5 +1,5 @@
 
-import 'package:bloodsample/UI/Screens/sign%20up/signup_controller.dart';
+import 'package:bloodsample/UI/Screens/sign%20up%20for%20user/signup_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_state_manager/src/simple/get_state.dart';
 
@@ -14,6 +14,7 @@ class InputField extends StatelessWidget{
         init: SignUpController(),
         builder: (SignUpController controller) {
           return SingleChildScrollView(
+
               child: Form(
                 key: controller.formkey,
                 child: Column(

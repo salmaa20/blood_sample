@@ -1,8 +1,9 @@
 import 'package:bloodsample/Widget/mini_elevated_button.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import '../../Home screen_user/Home_screen.dart';
+import '../sign up for user/sign_up.dart';
 
-import '../sign up/sign_up.dart';
 
 class RegisterScreen extends StatelessWidget {
   const RegisterScreen({super.key});

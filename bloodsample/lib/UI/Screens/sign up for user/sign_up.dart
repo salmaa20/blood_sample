@@ -18,7 +18,7 @@ class Signup extends StatelessWidget {
         child: Center(
           child: Column(
             children: <Widget>[
-              SizedBox(height: 5,),
+              SizedBox(height: 35,),
               Header(),
               Expanded(child: Container(
                 decoration: BoxDecoration(
@@ -28,14 +28,7 @@ class Signup extends StatelessWidget {
                       topRight: Radius.circular(50),
 
                     ),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.grey.withOpacity(0.5),
-                        spreadRadius: 5,
-                        blurRadius: 7,
-                        offset: Offset(0, 3),
-                      )
-                    ]
+
                 ),
 
                 child: InputWrapper(),
