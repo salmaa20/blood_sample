@@ -4,8 +4,6 @@ import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 import 'header.dart';
 import 'input_wrapper.dart';
-
-
 // ignore: use_key_in_widget_constructors
 class Signup extends StatelessWidget {
   @override

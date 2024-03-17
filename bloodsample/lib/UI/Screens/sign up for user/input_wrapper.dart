@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import '../../../Widget/custom_elevated_button_widget.dart';
+import '../../Home screen_user/Home_screen.dart';
 import '../../log in/log_in.dart';
 import 'input_field.dart';
 
@@ -50,7 +51,7 @@ class InputWrapper extends StatelessWidget {
                           style: TextStyle(color: Color(0XFF867B7B),fontSize: 15,)),
                       InkWell(
                           onTap: (){
-                            Get.to(LoginScreen());
+                            Get.to(HomeScreen());
                           },
                           child: const Text('sign in ', style: TextStyle(color: Color(0XFF4DC4EF),fontSize: 15 ),))
                     ],
