@@ -7,22 +7,24 @@ class Header extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.all(5),
 
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: <Widget>[
-          // ignore: sized_box_for_whitespace
-          Container(
-              height: 250,
-              width: 300,
-              child: Image(image: AssetImage('assets/images/logooo.jpeg'))),
-          SizedBox(height: 5,),
-          Center(
-            child: Text("  Sign up   ",
-              style: TextStyle(color: Colors.black, fontSize: 35,
-                fontWeight: FontWeight.bold,
-              ),),
-          ),
-        ],
+      child: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            // ignore: sized_box_for_whitespace
+            Container(
+                height: 200,
+                width: 300,
+                child: Image(image: AssetImage('assets/images/logooo.jpeg'))),
+
+            Center(
+              child: Text("  Sign up   ",
+                style: TextStyle(color: Colors.black, fontSize: 35,
+                  fontWeight: FontWeight.bold,
+                ),),
+            ),
+          ],
+        ),
       ),
     );
   }

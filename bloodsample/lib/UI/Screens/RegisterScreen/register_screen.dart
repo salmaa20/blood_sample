@@ -1,3 +1,5 @@
+import 'package:bloodsample/UI/log%20in/log_in.dart';
+import 'package:bloodsample/Widget/custom_elevated_button_widget.dart';
 import 'package:bloodsample/Widget/mini_elevated_button.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -44,7 +46,8 @@ class RegisterScreen extends StatelessWidget {
               ),
             ),
           ),
-          MiniElevatedButton(text: 'Register',   onPressed:() { Get.to(Signup());}),
+          CustomElevatedButtonWidget(text: "Register", textColor: Colors.white, onPressed: (){Get.to(Signup());}),
+
           const Text('____sign up with____',style: TextStyle(color: Color(0XFFBCBCBC)),),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -66,7 +69,9 @@ class RegisterScreen extends StatelessWidget {
              const Text('Already have an Account ?',
                style: TextStyle(color: Color(0XFF867B7B),fontSize: 15,)),
              InkWell(
-                 onTap: (){},
+                 onTap: (){
+                   Get.to(LoginScreen());
+                 },
                  child: const Text('sign in ', style: TextStyle(color: Color(0XFF4DC4EF),fontSize: 15 ),))
            ],
          )],

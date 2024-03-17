@@ -39,7 +39,7 @@ class InputWrapper extends StatelessWidget {
 
                       if (controller.formkey.currentState!.validate()) {
                         controller.signUp();
-                        Get.to(());
+                        Get.to((HomeScreen()));
                       }
 
                     },
