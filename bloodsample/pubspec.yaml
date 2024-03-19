@@ -38,6 +38,7 @@ dependencies:
   get: ^4.6.6
   shared_preferences: ^2.2.2
   splash_view: ^2.0.1
+  blurrycontainer: ^1.0.2
 
 
 dev_dependencies:
