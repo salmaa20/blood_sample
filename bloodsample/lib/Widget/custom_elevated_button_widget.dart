@@ -17,13 +17,14 @@ class CustomElevatedButtonWidget extends StatelessWidget{
       child: ElevatedButton(onPressed: (){
         onPressed!();
         // ignore: sort_child_properties_last
-      }, child:Text(text , style: TextStyle(color: textColor , fontSize: 20 , fontWeight: FontWeight.bold),),
+      },
+        child:Text(text , style: TextStyle(color: textColor , fontSize: 20 , fontWeight: FontWeight.bold),),
         style: ElevatedButton.styleFrom(
           shape: const RoundedRectangleBorder(
               borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(80), bottomRight: Radius.circular(80),
                   topRight: Radius.circular(40), bottomLeft: Radius.circular(40))),
-          backgroundColor: Colors.white,
+          backgroundColor: Colors.lightBlue,
         ),
       ),
     );
