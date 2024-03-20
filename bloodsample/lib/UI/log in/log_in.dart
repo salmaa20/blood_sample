@@ -10,6 +10,7 @@ import '../../Widget/custom_text_form_field_widget.dart';
 import '../Screens/WelcomeScreen/welcome_screen.dart';
 
 import '../Screens/sign up for user/sign_up.dart';
+import '../home for blood bank/home_screen_boodbank.dart';
 import 'login_controller.dart';
 
 // ignore: use_key_in_widget_constructors
@@ -56,9 +57,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       Form(
                         key: controller.formkey,
                         child: Column(
-
                           children: [
-
                             Row(
                               children: [
                                 Text("          Email"),
@@ -127,7 +126,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 Text("Dont have an account?" , style: TextStyle(color: Color(0xff0A0A0A)),),
                                 TextButton
                                   (onPressed: () {
-                                  Get.to(Signup());
+                                  Get.to(HomeScreenBank());
                                 },
                                     child: Text(" Sign up for free!", style: TextStyle(color: Color(0XFF4DC4EF)),))
                               ],

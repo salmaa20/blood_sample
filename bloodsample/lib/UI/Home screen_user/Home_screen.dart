@@ -1,7 +1,10 @@
+import 'package:bloodsample/UI/Donation%20screen/Donation%20screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
+import '../../Widget/custom_home_container_widget.dart';
 import '../Screens/WelcomeScreen/welcome_screen.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -30,6 +33,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     color: Color(0xff0A0A0A),
 
                   ),
+                  SizedBox(width: 280,),
                   Image.asset('assets/images/small_logo-removebg-preview.png'),
                 ],
               ),
@@ -40,21 +44,17 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               Text("Services:                             ", style: TextStyle(color: Colors.black,fontSize: 30,fontWeight: FontWeight.bold),),
               Row(children: [
-                SizedBox(width:35),
-                Image.asset('assets/images/check healthhhh.jpg'),
-                SizedBox(width: 20,),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Image(image:AssetImage('assets/images/donationnnn.jpg'))
-                  ],
+                SizedBox(width: 15,),
+                CustomHomeContainerWidget( text: '', imagePath: 'assets/images/check healthhhh.jpg', onPressed: (){},),
+                CustomHomeContainerWidget(text: '', imagePath: 'assets/images/donationnnn.jpg', onPressed: (){Get.to(DonationScreen());},),
+             ] )
+                ],
                 )
-              ],),
 
-            ]),
+         ),
+
+            ),
           ),
-        ),
-      ),
 
 
 
@@ -101,7 +101,6 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ],
         ),
-      ),
-    );
+      ));
   }
 }
