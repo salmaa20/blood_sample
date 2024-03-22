@@ -14,7 +14,8 @@ class CustomRegisterContainerWidget extends StatelessWidget {
   final Function onPressed;
   @override
   Widget build(BuildContext context) {
-    return InkWell(
+    return
+      InkWell(
       onTap: (){
         onPressed();
         },
