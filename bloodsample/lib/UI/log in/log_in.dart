@@ -1,5 +1,6 @@
 
 import 'package:bloodsample/UI/Screens/RegisterScreen/register_screen.dart';
+import 'package:bloodsample/UI/forgot%20password/forgott_password.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/get_navigation.dart';
@@ -92,7 +93,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               mainAxisAlignment: MainAxisAlignment.end,
                               children: [
                               TextButton(onPressed: (){
-                               // Get.to(ForgotPassScreen());
+                                Get.to(ForgotPassword());
                               }, child: Text("Forgot Password",
                                 style: TextStyle(color: Color(0XFF4DC4EF)),)),
                             ],),
