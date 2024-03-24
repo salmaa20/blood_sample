@@ -1,9 +1,7 @@
 import 'package:bloodsample/UI/log%20in/log_in.dart';
 import 'package:bloodsample/Widget/custom_elevated_button_widget.dart';
-import 'package:bloodsample/Widget/mini_elevated_button.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../../Home screen_user/Home_screen.dart';
 import '../sign up for user/sign_up.dart';
 
 

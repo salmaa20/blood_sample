@@ -1,12 +1,12 @@
 
-import 'package:bloodsample/UI/Screens/sign%20up%20for%20user/signup_controller.dart';
+import 'package:bloodsample/UI/Donation%20screen/Donation%20screen.dart';
+import 'package:bloodsample/UI/Home%20screen_user/Home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import '../../../Widget/custom_elevated_button_widget.dart';
-import '../../Donation screen/Donation screen.dart';
-import '../../Home screen_user/Home_screen.dart';
 import 'input_field.dart';
+import 'signup_controller.dart';
 
 // ignore: use_key_in_widget_constructors
 class InputWrapper extends StatelessWidget {

@@ -1,16 +1,12 @@
 
-import 'package:bloodsample/UI/Screens/RegisterScreen/register_screen.dart';
+import 'package:bloodsample/UI/RegisterScreen/register_screen.dart';
 import 'package:bloodsample/UI/forgot%20password/forgott_password.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 import 'package:get/get_state_manager/src/simple/get_state.dart';
-
 import '../../Widget/custom_elevated_button_widget.dart';
 import '../../Widget/custom_text_form_field_widget.dart';
-import '../Screens/WelcomeScreen/welcome_screen.dart';
-
-import '../Screens/sign up for user/sign_up.dart';
 import '../home for blood bank/home_screen_boodbank.dart';
 import 'login_controller.dart';
 

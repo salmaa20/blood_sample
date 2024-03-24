@@ -1,9 +1,9 @@
 
-import 'package:bloodsample/UI/Screens/sign%20up%20for%20user/signup_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_state_manager/src/simple/get_state.dart';
 
 import '../../../Widget/custom_text_form_field_widget.dart';
+import 'signup_controller.dart';
 
 
 // ignore: use_key_in_widget_constructors
