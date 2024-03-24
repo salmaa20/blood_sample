@@ -1,5 +1,5 @@
 
-import 'package:bloodsample/UI/Screens/RegisterScreen/register_screen.dart';
+import 'package:bloodsample/UI/RegisterScreen/register_screen.dart';
 import 'package:bloodsample/Widget/custom_register_container_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

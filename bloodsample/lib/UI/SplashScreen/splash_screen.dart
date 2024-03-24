@@ -1,6 +1,6 @@
-import 'package:bloodsample/UI/Screens/WelcomeScreen/welcome_screen.dart';
+
+import 'package:bloodsample/UI/WelcomeScreen/welcome_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:splash_view/source/presentation/pages/splash_view.dart';
 import 'package:splash_view/source/presentation/widgets/done.dart';
 

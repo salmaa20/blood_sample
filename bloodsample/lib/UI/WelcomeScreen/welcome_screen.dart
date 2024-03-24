@@ -1,5 +1,4 @@
-import 'package:bloodsample/UI/Screens/RegisterAsScreen/register_as_screen.dart';
-import 'package:bloodsample/Widget/custom_elevated_button_widget.dart';
+import 'package:bloodsample/UI/RegisterAsScreen/register_as_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

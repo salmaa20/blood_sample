@@ -1,4 +1,5 @@
-import 'package:bloodsample/UI/Screens/SplashScreen/splash_screen.dart';
+
+import 'package:bloodsample/UI/SplashScreen/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
